@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Quality: Ruff",
+      "type": "shell",
+      "command": "uv run ruff check ."
+    },
+    {
+      "label": "Quality: Black",
+      "type": "shell",
+      "command": "uv run black ."
+    },
+    {
+      "label": "Quality: Mypy",
+      "type": "shell",
+      "command": "uv run mypy src/"
+    },
+    {
+      "label": "Quality: Pytest",
+      "type": "shell",
+      "command": "uv run pytest -q --maxfail=1 --disable-warnings"
+    },
+    {
+      "label": "Run: Package",
+      "type": "shell",
+      "command": "PYTHONPATH=src uv run python -m mypackage"
+    },
+    {
+      "label": "Quality: All",
+      "type": "shell",
+      "command": "uv run ruff check . && uv run black . && uv run mypy src/ && uv run pytest -q --maxfail=1 --disable-warnings",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

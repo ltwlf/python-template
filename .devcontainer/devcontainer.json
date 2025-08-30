@@ -1,0 +1,47 @@
+{
+  "name": "Python Template",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "true",
+      "username": "vscode"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "charliermarsh.ruff",
+        "github.copilot",
+        "github.copilot-chat",
+        "tamasfe.even-better-toml",
+        "usernamehw.errorlens",
+        "PKief.material-icon-theme",
+        "Catppuccin.catppuccin-vsc"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": ".venv/bin/python",
+        "python.analysis.typeCheckingMode": "strict",
+        "python.testing.pytestEnabled": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": "explicit",
+          "source.fixAll": "explicit"
+        },
+        "ruff.enable": true,
+        "editor.rulers": [
+          100
+        ],
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": "active",
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "workbench.iconTheme": "material-icon-theme",
+        "workbench.colorTheme": "Catppuccin Mocha"
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}
