@@ -1,13 +1,46 @@
 {
   "recommendations": [
+    // Python development core
     "ms-python.python",
     "ms-python.vscode-pylance",
+    "ms-python.debugpy",
+
+    // Code quality and formatting
     "charliermarsh.ruff",
+
+    // AI assistance
     "github.copilot",
     "github.copilot-chat",
+
+    // Development experience
     "usernamehw.errorlens",
+    "ms-vscode.test-adapter-converter",
+    "littlefoxteam.vscode-python-test-adapter",
+
+    // File formats
+    "tamasfe.even-better-toml",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-json",
+
+    // Git and version control
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+
+    // Appearance and themes
     "PKief.material-icon-theme",
     "Catppuccin.catppuccin-vsc",
-    "tamasfe.even-better-toml"
+
+    // Documentation and markdown
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+
+    // Productivity
+    "ms-vscode.todo-tree",
+    "streetsidesoftware.code-spell-checker"
+  ],
+  "unwantedRecommendations": [
+    "ms-python.black-formatter",
+    "ms-python.isort",
+    "ms-python.flake8"
   ]
 }

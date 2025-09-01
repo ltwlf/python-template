@@ -1,0 +1,54 @@
+{
+    "Python Function with Docstring": {
+        "prefix": "pyfunc",
+        "body": [
+            "def ${1:function_name}(${2:args}) -> ${3:return_type}:",
+            "    \"\"\"${4:Description}.",
+            "    ",
+            "    Args:",
+            "        ${2:args}: ${5:Description}",
+            "    ",
+            "    Returns:",
+            "        ${3:return_type}: ${6:Description}",
+            "    \"\"\"",
+            "    ${0:pass}"
+        ],
+        "description": "Create a Python function with docstring"
+    },
+    "Python Class with Docstring": {
+        "prefix": "pyclass",
+        "body": [
+            "class ${1:ClassName}:",
+            "    \"\"\"${2:Description}.",
+            "    ",
+            "    Attributes:",
+            "        ${3:attribute}: ${4:Description}",
+            "    \"\"\"",
+            "    ",
+            "    def __init__(self, ${5:args}) -> None:",
+            "        \"\"\"Initialize ${1:ClassName}.",
+            "        ",
+            "        Args:",
+            "            ${5:args}: ${6:Description}",
+            "        \"\"\"",
+            "        ${0:pass}"
+        ],
+        "description": "Create a Python class with docstring"
+    },
+    "Python Test Function": {
+        "prefix": "pytest",
+        "body": [
+            "def test_${1:function_name}():",
+            "    \"\"\"Test ${2:description}.\"\"\"",
+            "    # Arrange",
+            "    ${3:setup}",
+            "    ",
+            "    # Act",
+            "    ${4:action}",
+            "    ",
+            "    # Assert",
+            "    ${0:assertion}"
+        ],
+        "description": "Create a pytest test function"
+    }
+}

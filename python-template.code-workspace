@@ -1,0 +1,29 @@
+{
+  "folders": [
+    {
+      "name": "Python Template",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.toml": "toml",
+      "*.yml": "yaml",
+      "*.yaml": "yaml"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "ms-python.debugpy",
+      "charliermarsh.ruff",
+      "github.copilot",
+      "github.copilot-chat",
+      "usernamehw.errorlens",
+      "PKief.material-icon-theme",
+      "Catppuccin.catppuccin-vsc",
+      "tamasfe.even-better-toml"
+    ]
+  }
+}

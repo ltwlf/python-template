@@ -1,12 +1,43 @@
+# Python
 .venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
 .pytest_cache/
 .coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
 dist/
+build/
 .build/
+*.egg-info/
 .ipynb_checkpoints/
+
+# Environment variables
 .env
 .env.*
+
+# IDE and editors (keep VS Code workspace config)
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific
 .DS_Store
-*.egg-info/
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Development
+.vscode/settings.json.bak
+*.log
+temp/
+tmp/
