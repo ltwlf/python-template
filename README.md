@@ -14,8 +14,8 @@ Modern Python project template with UV, Ruff, Black, Mypy, and Pytest.
 2. **Setup**:
 
     ```bash
-    uv sync                    # Install dependencies
-    uv run pre-commit install  # Setup quality checks
+    uv sync                              # Install dependencies
+    uv run python -m pre_commit install  # Setup quality checks
     ```
 
 3. **Customize**:

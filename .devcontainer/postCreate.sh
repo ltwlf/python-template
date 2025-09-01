@@ -14,7 +14,7 @@ if [ -f "pyproject.toml" ]; then
   uv sync
 
   # Setup pre-commit hooks
-  uv run pre-commit install
+  uv run python -m pre_commit install
 fi
 
 echo "Dev container setup complete ✅"
